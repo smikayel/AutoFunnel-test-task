@@ -1,0 +1,25 @@
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 900px;
+
+  p {
+    text-align: end;
+  }
+
+  .contentContainer {
+    display: flex;
+    gap: 20px;
+  }
+
+  @media screen and (max-width: 950px) {
+    p {
+      padding: 0 40px;
+      margin-bottom: 0;
+    }
+
+    .contentContainer {
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,82 @@
+.inputForm {
+  display: flex;
+  gap: 5px;
+  flex: 1;
+
+  .inputContent {
+    flex: 1;
+
+    .inputContainer {
+      margin: 0 0 20px;
+      display: flex;
+
+      label {
+        min-width: 40px;
+      }
+
+      div {
+        width: 100%;
+
+        input {
+          max-width: 250px;
+          width: 90%;
+          margin-left: 5px;
+          border: 1px solid #3b6aa7;
+          height: 30px;
+          padding-left: 5px;
+        }
+      }
+
+      .error {
+        color: red;
+        text-align: start;
+        padding: 0;
+        margin: 0 auto;
+        width: 90%;
+      }
+    }
+  }
+
+  .submitButton {
+    background-color: #079a2e;
+    border: none;
+    color: #fff;
+    text-transform: lowercase;
+    width: 150px;
+    height: 68px;
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 950px) {
+    flex-direction: column;
+    align-items: center;
+
+    .inputContent {
+      flex: initial;
+      width: 100%;
+
+      .inputContainer {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 90%;
+        margin: 0 auto;
+
+        div {
+          margin-bottom: 10px;
+
+          input {
+            max-width: inherit;
+            margin: 0;
+            width: 99%;
+          }
+        }
+      }
+    }
+
+    .submitButton {
+      width: 90%;
+      height: fit-content;
+      padding: 5px 0;
+    }
+  }
+}

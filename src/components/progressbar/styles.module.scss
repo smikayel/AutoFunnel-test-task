@@ -1,0 +1,24 @@
+.container {
+  border: 1px solid #90aacc;
+  width: 100%;
+  padding: 5px;
+  position: relative;
+
+  .progressbar {
+    height: 25px;
+    background-color: #9dd24a;
+    text-align: center;
+    line-height: 30px;
+    color: #000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-right: 1px solid #3a68a2;
+  }
+
+  .text {
+    position: relative;
+    z-index: 10px;
+    font-size: 12px;
+  }
+}
